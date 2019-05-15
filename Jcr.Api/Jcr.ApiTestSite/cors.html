@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+    <script src="Scripts/jquery-1.6.min.js"></script>
+    
+    <!--<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js'></script>-->
+    <!-- include extension -->
+    <script src='jquery.base64.js' type='text/javascript'></script>
+    
+
+    <script type="text/javascript">
+     
+	$(document).ready(function() {
+		$.support.cors = true;
+		var feedbackArea = $('#response');
+	
+
+        var Name = "Ksultz@jcrinc.com";
+        var Password = "1234";
+		var token = null;
+	
+		var baseAddress = 'http://services.dev.devjcrinc.com/';
+        var authorizationBasic = btoa(Name + ":" + Password);
+		
+		$('#testButton1').click(function () {
+		   
+	            	$.ajax({
+	            	    type: "POST",
+	            	    crossDomain: true,
+                        url: baseAddress + "Authenticate/get/token",
+                        
+                        dataType: "json",
+                        
+                       
+				        contentType: "application/x-www-form-urlencoded; charset=utf-8",
+				        
+				        headers: {
+				            
+				          //  "Access-Control-Allow-Origin": "http://services.dev.devjcrinc.com",
+				           // "Access-Control-Allow-Origin": baseAddress,
+				            //"Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+				            //"Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token",
+				            "Authorization": "Basic " + authorizationBasic
+				        },
+                
+                success: function (response, status, header) {
+				    if (response == "") {
+				        alert("response returns is nothing");
+				    }
+                    else {
+				        alert("HERE");
+                        token = header.getResponseHeader('Token');
+                       // userId = header.getResponseHeader('UserId');
+                       
+						$.ajax({
+	        			    type: 'GET',	        			        	
+	        			    url: baseAddress + 'MenuInfo/GetMenuState?userId=100106',
+							data: { },
+							dataType: 'json',
+							contentType: 'application/json',
+							headers: {							
+							    'token': token,
+							    'Access-Control-Allow-Credentials': 'true'
+							},
+							success: function (data) {							    
+							    //var result;
+							    //result=data.Content.ReadAsStringAsync().Result;
+							    //data[0]:  Returned data							    
+							    //AccessToAMP: true
+							    //AccessToCMS: false
+							    //AccessToEdition: true
+							    //AccessToERAMP: true
+							    //AccessToERTracers: true
+							    //AccessToMockSurvey: false
+							    //AccessToTracers: true
+							    //CertificationItemID: 0 
+							    //CycleEffectiveDate: ""
+							    //EProductID: 11
+							    //IsCurrentCycle: true
+							    //MockSurveyTitle: ""      
+							    //PageID: 14
+							    //ProgramID: 0
+							    //SiteID: 681
+							    //UserID: 100106
+							    //UserIsMultiSiteAdmin: true
+							    //UserRoleID: 1
+							    var AccessToAMP = data[0].AccessToAMP;
+							    var AccessToCMS=data[0].AccessToCMS;
+							    
+							    
+							},
+							error: function (x, y, z) {
+							    //alert(x + '\n' + y + '\n' + z)
+							    var errmsg = x.responseText;
+							}
+						});
+
+				
+					}
+
+				},
+				error: function (x, y, z) {
+		                	alert(x + '\n' + y + '\n' + z)
+				}
+	            	});
+
+		    
+		});
+	});
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <div class="jumbotron">
+        <h2>Test CORS (Cross-origin resource sharing)</h2>
+        <p class="lead">
+            <a href="#" class="btn btn-primary btn-large" id="testButton1">GetData using CORS</a></br>
+            <div id="demo"></div>
+        </p>
+    </div>
+</body>
+</html>

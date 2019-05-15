@@ -1,0 +1,122 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jcr.Api", "Jcr.Api\Jcr.Api.csproj", "{71CCFD75-53EF-4474-8C67-5E46B8875225}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jcr.Data", "Jcr.Data\Jcr.Data.csproj", "{7A789E5B-534E-4A3A-BC9F-9D0902C2F09E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jcr.Business", "Jcr.Business\Jcr.Business.csproj", "{F6AC501C-85AA-442F-ACD0-E09DC16D5B3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JcrApiTest.ConsoleApp2015.ConsoleApp", "JcrApiTest.ConsoleApp2015.ConsoleApp\JcrApiTest.ConsoleApp2015.ConsoleApp.csproj", "{DEC1B660-8800-4522-89C4-A23DCD2947FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JCRApiTestSite", "Jcr.ApiTestSite\JCRApiTestSite.csproj", "{97505475-CF7A-4890-93B9-DBB79CEC3136}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jcr.Api.Enumerators", "Jcr.Api.Enumerators\Jcr.Api.Enumerators.csproj", "{D6FB9484-F274-4DD8-9B5E-B3ADC3560708}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jcr.Api.Models", "Jcr.Api.Models\Jcr.Api.Models.csproj", "{6796A652-61F4-464C-9C45-BDCA248BD4D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jcr.Api.Helpers", "Jcr.Api.Helpers\Jcr.Api.Helpers.csproj", "{B3830375-7C9F-497A-BA04-395AF8C56B6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JCRAPIUnitTest", "UnitTestProject1\JCRAPIUnitTest.csproj", "{34BDB60A-62CD-41B5-9E9E-7687C54204BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Deploy|Any CPU = Deploy|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71CCFD75-53EF-4474-8C67-5E46B8875225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71CCFD75-53EF-4474-8C67-5E46B8875225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71CCFD75-53EF-4474-8C67-5E46B8875225}.Deploy|Any CPU.ActiveCfg = Deploy|Any CPU
+		{71CCFD75-53EF-4474-8C67-5E46B8875225}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
+		{71CCFD75-53EF-4474-8C67-5E46B8875225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71CCFD75-53EF-4474-8C67-5E46B8875225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A789E5B-534E-4A3A-BC9F-9D0902C2F09E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A789E5B-534E-4A3A-BC9F-9D0902C2F09E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A789E5B-534E-4A3A-BC9F-9D0902C2F09E}.Deploy|Any CPU.ActiveCfg = Deploy|Any CPU
+		{7A789E5B-534E-4A3A-BC9F-9D0902C2F09E}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
+		{7A789E5B-534E-4A3A-BC9F-9D0902C2F09E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A789E5B-534E-4A3A-BC9F-9D0902C2F09E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6AC501C-85AA-442F-ACD0-E09DC16D5B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6AC501C-85AA-442F-ACD0-E09DC16D5B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6AC501C-85AA-442F-ACD0-E09DC16D5B3B}.Deploy|Any CPU.ActiveCfg = Deploy|Any CPU
+		{F6AC501C-85AA-442F-ACD0-E09DC16D5B3B}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
+		{F6AC501C-85AA-442F-ACD0-E09DC16D5B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6AC501C-85AA-442F-ACD0-E09DC16D5B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEC1B660-8800-4522-89C4-A23DCD2947FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC1B660-8800-4522-89C4-A23DCD2947FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC1B660-8800-4522-89C4-A23DCD2947FC}.Deploy|Any CPU.ActiveCfg = Deploy|Any CPU
+		{DEC1B660-8800-4522-89C4-A23DCD2947FC}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
+		{DEC1B660-8800-4522-89C4-A23DCD2947FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC1B660-8800-4522-89C4-A23DCD2947FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97505475-CF7A-4890-93B9-DBB79CEC3136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97505475-CF7A-4890-93B9-DBB79CEC3136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97505475-CF7A-4890-93B9-DBB79CEC3136}.Deploy|Any CPU.ActiveCfg = Debug|Any CPU
+		{97505475-CF7A-4890-93B9-DBB79CEC3136}.Deploy|Any CPU.Build.0 = Debug|Any CPU
+		{97505475-CF7A-4890-93B9-DBB79CEC3136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97505475-CF7A-4890-93B9-DBB79CEC3136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6FB9484-F274-4DD8-9B5E-B3ADC3560708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6FB9484-F274-4DD8-9B5E-B3ADC3560708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6FB9484-F274-4DD8-9B5E-B3ADC3560708}.Deploy|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6FB9484-F274-4DD8-9B5E-B3ADC3560708}.Deploy|Any CPU.Build.0 = Debug|Any CPU
+		{D6FB9484-F274-4DD8-9B5E-B3ADC3560708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6FB9484-F274-4DD8-9B5E-B3ADC3560708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6796A652-61F4-464C-9C45-BDCA248BD4D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6796A652-61F4-464C-9C45-BDCA248BD4D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6796A652-61F4-464C-9C45-BDCA248BD4D9}.Deploy|Any CPU.ActiveCfg = Debug|Any CPU
+		{6796A652-61F4-464C-9C45-BDCA248BD4D9}.Deploy|Any CPU.Build.0 = Debug|Any CPU
+		{6796A652-61F4-464C-9C45-BDCA248BD4D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6796A652-61F4-464C-9C45-BDCA248BD4D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3830375-7C9F-497A-BA04-395AF8C56B6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3830375-7C9F-497A-BA04-395AF8C56B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3830375-7C9F-497A-BA04-395AF8C56B6F}.Deploy|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3830375-7C9F-497A-BA04-395AF8C56B6F}.Deploy|Any CPU.Build.0 = Debug|Any CPU
+		{B3830375-7C9F-497A-BA04-395AF8C56B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3830375-7C9F-497A-BA04-395AF8C56B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34BDB60A-62CD-41B5-9E9E-7687C54204BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34BDB60A-62CD-41B5-9E9E-7687C54204BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34BDB60A-62CD-41B5-9E9E-7687C54204BA}.Deploy|Any CPU.ActiveCfg = Debug|Any CPU
+		{34BDB60A-62CD-41B5-9E9E-7687C54204BA}.Deploy|Any CPU.Build.0 = Debug|Any CPU
+		{34BDB60A-62CD-41B5-9E9E-7687C54204BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34BDB60A-62CD-41B5-9E9E-7687C54204BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://jcrdevteam2012:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Jcr.Api\\Jcr.Api.csproj
+		SccProjectName1 = Jcr.Api
+		SccLocalPath1 = Jcr.Api
+		SccProjectUniqueName2 = Jcr.Data\\Jcr.Data.csproj
+		SccProjectName2 = Jcr.Data
+		SccLocalPath2 = Jcr.Data
+		SccProjectUniqueName3 = Jcr.Business\\Jcr.Business.csproj
+		SccProjectName3 = Jcr.Business
+		SccLocalPath3 = Jcr.Business
+		SccProjectUniqueName4 = JcrApiTest.ConsoleApp2015.ConsoleApp\\JcrApiTest.ConsoleApp2015.ConsoleApp.csproj
+		SccProjectName4 = JcrApiTest.ConsoleApp2015.ConsoleApp
+		SccLocalPath4 = JcrApiTest.ConsoleApp2015.ConsoleApp
+		SccProjectUniqueName5 = Jcr.ApiTestSite\\JCRApiTestSite.csproj
+		SccProjectName5 = Jcr.ApiTestSite
+		SccLocalPath5 = Jcr.ApiTestSite
+		SccProjectUniqueName6 = Jcr.Api.Enumerators\\Jcr.Api.Enumerators.csproj
+		SccProjectName6 = Jcr.Api.Enumerators
+		SccLocalPath6 = Jcr.Api.Enumerators
+		SccProjectUniqueName7 = Jcr.Api.Models\\Jcr.Api.Models.csproj
+		SccProjectName7 = Jcr.Api.Models
+		SccLocalPath7 = Jcr.Api.Models
+		SccProjectUniqueName8 = Jcr.Api.Helpers\\Jcr.Api.Helpers.csproj
+		SccProjectName8 = Jcr.Api.Helpers
+		SccLocalPath8 = Jcr.Api.Helpers
+		SccProjectUniqueName9 = UnitTestProject1\\JCRAPIUnitTest.csproj
+		SccProjectName9 = UnitTestProject1
+		SccLocalPath9 = UnitTestProject1
+	EndGlobalSection
+EndGlobal

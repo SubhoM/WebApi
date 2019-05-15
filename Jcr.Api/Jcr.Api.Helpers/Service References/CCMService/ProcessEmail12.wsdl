@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ProcessEmail" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IProcessEmail_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://ccmsvc.devb.devjcrinc.com/ProcessEmail.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="https://ccmsvc.devb.devjcrinc.com/ProcessEmail.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://ccmsvc.devb.devjcrinc.com/ProcessEmail.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/JCR.CCM.EmailService" />
+      <xsd:import schemaLocation="https://ccmsvc.devb.devjcrinc.com/ProcessEmail.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://ccmsvc.devb.devjcrinc.com/ProcessEmail.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/JCR.CCM.BusinessController" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IProcessEmail_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendEmail" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendEREmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendEREmail" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendEREmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendEREmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_GetTokenReplacementText_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTokenReplacementText" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_GetTokenReplacementText_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTokenReplacementTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendAdhocEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendAdhocEmail" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendAdhocEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendAdhocEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_ProcessText_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessText" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_ProcessText_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendGeneralEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendGeneralEmail" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendGeneralEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendGeneralEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendOversizeEmailAlert_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendOversizeEmailAlert" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendOversizeEmailAlert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendOversizeEmailAlertResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendTracerDeptAssignmentEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendTracerDeptAssignmentEmail" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendTracerDeptAssignmentEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendTracerDeptAssignmentEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendTaskEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendTaskEmail" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendTaskEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendTaskEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendTaskNotificationEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendTaskNotificationEmail" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendTaskNotificationEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendTaskNotificationEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendTasksEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendTasksEmail" />
+  </wsdl:message>
+  <wsdl:message name="IProcessEmail_SendTasksEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendTasksEmailResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IProcessEmail">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProcessEmail/GetData" message="tns:IProcessEmail_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProcessEmail/GetDataResponse" message="tns:IProcessEmail_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProcessEmail/GetDataUsingDataContract" message="tns:IProcessEmail_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProcessEmail/GetDataUsingDataContractResponse" message="tns:IProcessEmail_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProcessEmail/SendEmail" message="tns:IProcessEmail_SendEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProcessEmail/SendEmailResponse" message="tns:IProcessEmail_SendEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEREmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProcessEmail/SendEREmail" message="tns:IProcessEmail_SendEREmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProcessEmail/SendEREmailResponse" message="tns:IProcessEmail_SendEREmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTokenReplacementText">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProcessEmail/GetTokenReplacementText" message="tns:IProcessEmail_GetTokenReplacementText_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProcessEmail/GetTokenReplacementTextResponse" message="tns:IProcessEmail_GetTokenReplacementText_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendAdhocEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProcessEmail/SendAdhocEmail" message="tns:IProcessEmail_SendAdhocEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProcessEmail/SendAdhocEmailResponse" message="tns:IProcessEmail_SendAdhocEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessText">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProcessEmail/ProcessText" message="tns:IProcessEmail_ProcessText_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProcessEmail/ProcessTextResponse" message="tns:IProcessEmail_ProcessText_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendGeneralEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProcessEmail/SendGeneralEmail" message="tns:IProcessEmail_SendGeneralEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProcessEmail/SendGeneralEmailResponse" message="tns:IProcessEmail_SendGeneralEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendOversizeEmailAlert">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProcessEmail/SendOversizeEmailAlert" message="tns:IProcessEmail_SendOversizeEmailAlert_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProcessEmail/SendOversizeEmailAlertResponse" message="tns:IProcessEmail_SendOversizeEmailAlert_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTracerDeptAssignmentEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProcessEmail/SendTracerDeptAssignmentEmail" message="tns:IProcessEmail_SendTracerDeptAssignmentEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProcessEmail/SendTracerDeptAssignmentEmailResponse" message="tns:IProcessEmail_SendTracerDeptAssignmentEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTaskEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProcessEmail/SendTaskEmail" message="tns:IProcessEmail_SendTaskEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProcessEmail/SendTaskEmailResponse" message="tns:IProcessEmail_SendTaskEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTaskNotificationEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProcessEmail/SendTaskNotificationEmail" message="tns:IProcessEmail_SendTaskNotificationEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProcessEmail/SendTaskNotificationEmailResponse" message="tns:IProcessEmail_SendTaskNotificationEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTasksEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProcessEmail/SendTasksEmail" message="tns:IProcessEmail_SendTasksEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProcessEmail/SendTasksEmailResponse" message="tns:IProcessEmail_SendTasksEmail_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IProcessEmail" type="tns:IProcessEmail">
+    <wsp:PolicyReference URI="#WSHttpBinding_IProcessEmail_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap12:operation soapAction="http://tempuri.org/IProcessEmail/GetData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap12:operation soapAction="http://tempuri.org/IProcessEmail/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmail">
+      <soap12:operation soapAction="http://tempuri.org/IProcessEmail/SendEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEREmail">
+      <soap12:operation soapAction="http://tempuri.org/IProcessEmail/SendEREmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTokenReplacementText">
+      <soap12:operation soapAction="http://tempuri.org/IProcessEmail/GetTokenReplacementText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendAdhocEmail">
+      <soap12:operation soapAction="http://tempuri.org/IProcessEmail/SendAdhocEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessText">
+      <soap12:operation soapAction="http://tempuri.org/IProcessEmail/ProcessText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendGeneralEmail">
+      <soap12:operation soapAction="http://tempuri.org/IProcessEmail/SendGeneralEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendOversizeEmailAlert">
+      <soap12:operation soapAction="http://tempuri.org/IProcessEmail/SendOversizeEmailAlert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTracerDeptAssignmentEmail">
+      <soap12:operation soapAction="http://tempuri.org/IProcessEmail/SendTracerDeptAssignmentEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTaskEmail">
+      <soap12:operation soapAction="http://tempuri.org/IProcessEmail/SendTaskEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTaskNotificationEmail">
+      <soap12:operation soapAction="http://tempuri.org/IProcessEmail/SendTaskNotificationEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTasksEmail">
+      <soap12:operation soapAction="http://tempuri.org/IProcessEmail/SendTasksEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProcessEmail">
+    <wsdl:port name="WSHttpBinding_IProcessEmail" binding="tns:WSHttpBinding_IProcessEmail">
+      <soap12:address location="https://ccmsvc.devb.devjcrinc.com/ProcessEmail.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>https://ccmsvc.devb.devjcrinc.com/ProcessEmail.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/JCR.CCM.BusinessController" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/JCR.CCM.BusinessController" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://ccmsvc.devb.devjcrinc.com/ProcessEmail.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="MailDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="AmpUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Application" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApplicationCode" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Attachments" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="CustomText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailBCC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailCC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailTo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErUserScheduleID" type="xs:int" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FailedRecipients" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="FromEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Guid" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GuidList" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element minOccurs="0" name="MailContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MailSubject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReportName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+      <xs:element minOccurs="0" name="TemplateID" type="xs:int" />
+      <xs:element minOccurs="0" name="TxtNewEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserEmailScheduleID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MailDetails" nillable="true" type="tns:MailDetails" />
+  <xs:complexType name="TaskMailDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="ApplicationCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailLogID" type="xs:int" />
+      <xs:element minOccurs="0" name="EmailRecipients" nillable="true" type="tns:ArrayOfEmailRecipient" />
+      <xs:element minOccurs="0" name="FromEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsMailFailed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaskNotificationScheduleIDs" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TemplateID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaskMailDetail" nillable="true" type="tns:TaskMailDetail" />
+  <xs:complexType name="ArrayOfEmailRecipient">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmailRecipient" nillable="true" type="tns:EmailRecipient" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmailRecipient" nillable="true" type="tns:ArrayOfEmailRecipient" />
+  <xs:complexType name="EmailRecipient">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailLogID" type="xs:int" />
+      <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsMailFailed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="StatusMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmailRecipient" nillable="true" type="tns:EmailRecipient" />
+  <xs:complexType name="TaskDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AssignedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AssignedOn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AssignedTo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompletionDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompletionDetails" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DueDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HCOID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemAssociated" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProgramName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaskDetails" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaskIDs" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaskLinkUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaskName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaskStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserFullName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaskDetail" nillable="true" type="tns:TaskDetail" />
+  <xs:complexType name="ArrayOfTaskDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TaskDetail" nillable="true" type="tns:TaskDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaskDetail" nillable="true" type="tns:ArrayOfTaskDetail" />
+</xs:schema>

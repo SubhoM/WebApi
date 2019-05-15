@@ -1,0 +1,10 @@
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Enumerators\bin\Debug\SqlServerTypes\x64\msvcr100.dll
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Enumerators\bin\Debug\SqlServerTypes\x64\SqlServerSpatial110.dll
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Enumerators\bin\Debug\SqlServerTypes\x86\msvcr100.dll
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Enumerators\bin\Debug\SqlServerTypes\x86\SqlServerSpatial110.dll
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Enumerators\bin\Debug\Jcr.Api.Enumerators.dll
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Enumerators\bin\Debug\Jcr.Api.Enumerators.pdb
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Enumerators\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Enumerators\obj\Debug\Jcr.Api.Enumerators.dll
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Enumerators\obj\Debug\Jcr.Api.Enumerators.pdb
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Enumerators\obj\Debug\Jcr.Api.Enumerators.csprojResolveAssemblyReference.cache

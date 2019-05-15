@@ -1,0 +1,16 @@
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\bin\SqlServerTypes\x64\msvcr100.dll
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\bin\SqlServerTypes\x64\SqlServerSpatial110.dll
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\bin\SqlServerTypes\x86\msvcr100.dll
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\bin\SqlServerTypes\x86\SqlServerSpatial110.dll
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\bin\JcrApiTest2015.ConsoleApp.exe.config
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\bin\JcrApiTest2015.ConsoleApp.exe
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\bin\JcrApiTest2015.ConsoleApp.pdb
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\bin\Microsoft.SqlServer.Types.dll
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\bin\Newtonsoft.Json.dll
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\bin\System.Net.Http.Extensions.dll
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\bin\System.Net.Http.Formatting.dll
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\bin\System.Net.Http.Primitives.dll
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\bin\Newtonsoft.Json.xml
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\obj\Debug\JcrApiTest2015.ConsoleApp.exe
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\obj\Debug\JcrApiTest2015.ConsoleApp.pdb
+C:\EProducts\Dev\Jcr.Api\JcrApiTest.ConsoleApp2015.ConsoleApp\obj\Debug\JcrApiTest.ConsoleApp2015.ConsoleApp.csprojResolveAssemblyReference.cache

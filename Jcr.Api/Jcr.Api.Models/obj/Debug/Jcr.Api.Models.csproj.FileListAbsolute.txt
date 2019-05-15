@@ -1,0 +1,10 @@
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Models\bin\Debug\SqlServerTypes\x64\msvcr100.dll
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Models\bin\Debug\SqlServerTypes\x64\SqlServerSpatial110.dll
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Models\bin\Debug\SqlServerTypes\x86\msvcr100.dll
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Models\bin\Debug\SqlServerTypes\x86\SqlServerSpatial110.dll
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Models\bin\Debug\Jcr.Api.Models.dll
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Models\bin\Debug\Jcr.Api.Models.pdb
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Models\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Models\obj\Debug\Jcr.Api.Models.dll
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Models\obj\Debug\Jcr.Api.Models.pdb
+C:\EProducts\Dev\Jcr.Api\Jcr.Api.Models\obj\Debug\Jcr.Api.Models.csprojResolveAssemblyReference.cache
